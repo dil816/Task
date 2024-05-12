@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
     tools:context=".MainActivity">
 
-    <TextView
+    <!--recycler view for displaying all tasks-->
+
+    <!--fab for adding a new tasks-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRV"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-21dp"
+        tools:listitem="@layout/task_rv_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/black_shade_2"
+        app:tint="@color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="591dp"
+        android:textSize="38sp"
+        android:textColor="@color/white"
+        android:text="Task List" />
+
+</RelativeLayout>
