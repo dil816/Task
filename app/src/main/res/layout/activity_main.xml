@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_shade_1"
+    android:background="@color/purple_shade_1"
     tools:context=".MainActivity">
 
     <!--recycler view for displaying all tasks-->
@@ -36,7 +36,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/black_shade_2"
+        app:backgroundTint="@color/teal_700"
         app:tint="@color/white" />
 
     <TextView

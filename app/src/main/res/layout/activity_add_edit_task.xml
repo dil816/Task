@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_shade_1"
+    android:background="@color/purple_shade_1"
     tools:context=".AddEditTaskActivity">
 
     <!--edit text for task title-->
@@ -30,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/black_shade_1"
+        android:background="@color/purple_shade_1"
         android:gravity="start|top"
         android:hint="Enter your Note Details"
         android:inputType="textMultiLine"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:background="@drawable/custom_button_back"
+        android:backgroundTint="@color/teal_700"
         android:text="Button"
         android:textAllCaps="false"
         android:textColor="@color/white" />
