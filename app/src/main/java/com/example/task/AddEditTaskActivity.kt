@@ -23,8 +23,7 @@ class AddEditTaskActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add_edit_task)
 
         viewModal = ViewModelProvider(
-            this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(application)
+            this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)
         ).get(TaskViewModal::class.java)
 
         taskTitleEdt = findViewById(R.id.idEdtTaskName)

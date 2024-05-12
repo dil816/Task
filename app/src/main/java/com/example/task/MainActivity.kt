@@ -31,8 +31,7 @@ class MainActivity : AppCompatActivity(), TaskClickInterface, TaskClickDeleteInt
         tasksRV.adapter = taskRVAdapter
 
         viewModal = ViewModelProvider(
-            this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(application)
+            this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)
         ).get(TaskViewModal::class.java)
 
         viewModal.allTasks.observe(this, Observer { list ->
